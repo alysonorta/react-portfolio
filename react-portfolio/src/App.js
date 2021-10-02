@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import Project from "./components/Project";
 import Navigation from "./components/Navigation";
 
-
+import myProjects from "./myProjects";
 
 
 const appStyles = {
@@ -19,8 +19,8 @@ function App() {
     <div style={appStyles.app}>
       <Header />
       <Navigation />
-      <Project />
-      <Project />
+      <Project myProjects={myProjects} />
+
       <Footer />
     </div>
   );

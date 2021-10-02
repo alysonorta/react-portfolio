@@ -1,4 +1,5 @@
 import React from "react";
+import myProjects from "../myProjects";
 
 const projectStyles = {
     project: {
@@ -13,7 +14,7 @@ const projectStyles = {
       background: '#B5838D',
       minHeight: 50,
       lineHeight: 3.5,
-      fontSize: '1.2rem',
+      fontSize: '35px',
       color: 'white',
       padding: '0 20px',
     },
@@ -23,16 +24,18 @@ const projectStyles = {
 };
 
 
-
-export default function Project(){
+const Project = ({ myProjects }) => {
+    const myProjectList = myProjects.map((myProject) => {
+        return <myProjects key={myProject.name.title} myProject={myProject} />;
+    })
     return (
-        <div style={projectStyles.project}>
-            <footer>
-                <h6>Here is my first Project.</h6>
-            </footer>
+        <div className="container">
+            <div style={projectStyles.project}> {myProjectList}</div>
         </div>
     )
 };
+
+export default Project;
 
 
 
