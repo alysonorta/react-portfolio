@@ -2,7 +2,7 @@ import React from 'react';
 
 const headerStyles = {
     header: {
-    backgroundColor: 'black',
+    backgroundColor: '#E5989B',
     color: 'white',
     },
     
@@ -12,7 +12,7 @@ export default function Header(){
     return (
         <div style={headerStyles.header}>
             <header class='header'>
-                <h1>Home</h1>
+                <h1>Alyson Orta</h1>
             </header>
         </div>
     )
